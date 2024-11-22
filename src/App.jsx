@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import portada from './imgs/portada.jpg'
 import viteLogo from '/vite.svg'
 import './App.css'
