@@ -27,6 +27,7 @@ function App() {
           <Route path="/anime2" element={<Anime2 />} />
           <Route path="/anime3" element={<Anime3 />} />
         </Routes>
+        <Inicio />
       </main>
       <footer style={{ textAlign: 'center' }}>
         <p>© 2024, Creados por: Kevin Lis, Juan Montaño, David Yazo </p>
