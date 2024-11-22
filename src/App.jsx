@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
+import portada from './imgs/portada.jpg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Anime1 from './components/Anime1.jsx';
+import Anime2 from './components/Anime2.jsx';
+import Anime3 from './components/Anime3.jsx';
 
 function App() {
   return (
@@ -25,24 +28,22 @@ function App() {
           <Route path="/anime3" element={<Anime3 />} />
         </Routes>
       </main>
+      <footer style={{ textAlign: 'center' }}>
+        <p>© 2024, Creados por: Kevin Lis, Juan Montaño, David Yazo </p>
+      </footer>
     </>
   )
 }
 
 function Inicio() {
-  return <h1>Inicio</h1>
+  return (
+    <div style={{ textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+      <h1>Biblioteca Anime</h1>
+      <img src={portada} alt="portada" style={{ width: '50%', height: 'auto', aspectRatio: '12/9' }} />
+    </div>
+  );
 }
 
-function Anime1() {
-  return <h1>Anime 1</h1>
-}
 
-function Anime2() {
-  return <h1>Anime 2</h1>
-}
-
-function Anime3() {
-  return <h1>Anime 3</h1>
-}
 
 export default App

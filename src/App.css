@@ -1,12 +1,19 @@
-header {
-  background-color: #282c34;
-  padding: 1rem;
-  color: white;
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px; /* dimension más chica de los celulareas */
+  height: 50px;
+  text-align:center;
+  border-bottom: 2px inset;
 }
 
 nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 
