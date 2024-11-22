@@ -14,7 +14,7 @@ function App() {
       <header>
         <nav>
           <ul>
-            <li><Link to="/">Inicio</Link></li>
+            <li><Link to="/parcial-3/">Inicio</Link></li>
             <li><Link to="/anime1">Anime 1</Link></li>
             <li><Link to="/anime2">Anime 2</Link></li>
             <li><Link to="/anime3">Anime 3</Link></li>
@@ -23,7 +23,7 @@ function App() {
       </header>
       <main>
         <Routes>
-          <Route path="/" element={<Inicio />} />
+          <Route path="/parcial-3/" element={<Inicio />} />
           <Route path="/anime1" element={<Anime1 />} />
           <Route path="/anime2" element={<Anime2 />} />
           <Route path="/anime3" element={<Anime3 />} />
